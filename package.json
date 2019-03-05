@@ -69,8 +69,8 @@
     "vinyl-source-stream": "2.0.0"
   },
   "scripts": {
-    "build": "./build_releases.sh",
-    "release": "./build_releases.sh && npm publish",
+    "build": "bash ./build_releases.sh",
+    "release": "bash ./build_releases.sh && npm publish",
     "test": "PARSE_BUILD=node jest",
     "lint": "eslint --cache src/ integration/",
     "preintegration": "npm run build",

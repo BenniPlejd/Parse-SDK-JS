@@ -154,6 +154,8 @@ const RESTController = {
   request(method: string, path: string, data: mixed, options?: RequestOptions) {
     options = options || {};
     var url = CoreManager.get('SERVER_URL');
+    console.info('RESTController.request(), url:', url);
+    
     if (url[url.length - 1] !== '/') {
       url += '/';
     }
